@@ -2,10 +2,13 @@ const express = require("express");
 const bodyParser = require("body-parser");
 var mysql = require('mysql');
 
+
+const secret=process.env.SECRET;
+
 var con = mysql.createConnection({
   host: "localhost",
   user: "root",
-  password: "password",
+  password: secret,
   database: "dbms1"
 });
 
@@ -220,7 +223,7 @@ con.query(sql1,function(err,result){
   name3=req.body.course1;
   school3=req.body.school1;
 
-  var sql6="Insert into course(course_name,school_name,usn) values('"+name1+"','"+school1+"','"+usn+"')";
+  var sql6="Insert into course(course_name,school_name,usn) values('"+name3+"','"+school3+"','"+usn+"')";
 
   con.query(sql4,function(err,result){
     if(err)
