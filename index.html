@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <style>
+    .main {
+      background-image: url("images/pic9.jpg");
+      background-size: cover;
+      height: 700px;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      position: relative;
+
+    }
+
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: black;
+    }
+
+    li {
+      float: left;
+    }
+
+    li a {
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+
+    li a:hover {
+      background-color: #ff6584;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 15px 25px;
+      font-size: 24px;
+      cursor: pointer;
+      text-align: center;
+      text-decoration: none;
+      outline: none;
+      color: #fff;
+      background-color: #ff6584;
+      border: none;
+      border-radius: 15px;
+      box-shadow: 0 9px #999;
+      position: absolute;
+      margin: 400px 670px;
+    }
+
+    .button:hover {
+      background-color: black
+    }
+
+    .button:active {
+      background-color: #3e8e41;
+      box-shadow: 0 5px #666;
+      transform: translateY(4px);
+    }
+  </style>
+</head>
+
+<body>
+  <ul>
+    <li><a class="active" href="/">Home</a></li>
+    <li><a href="/about">About</a></li>
+    <li><a href="mailto:ksoumyaofficial@gmail.com">Contact Us</a></li>
+    <li><a href="/faq">FAQs</a></li>
+  </ul>
+  <div class="main">
+
+    <form action="/details" method="onClick">
+      <input class="button" type="submit" value="Enter Details">
+    </form>
+
+  </div>
+
+
+</body>
+
+</html>
